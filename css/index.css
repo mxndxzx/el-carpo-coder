@@ -79,6 +79,15 @@ span {
     color: #FFFAF4;
 }
 
+.menu a:hover, .menu-about a:hover {
+    color: #759592;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
 /* Redimensionar imágenes */
 img {
     width: 100%;
@@ -137,6 +146,22 @@ img {
     border-radius: 20px;
     width: 16%;
     margin: 0 auto;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.form-btn:hover {
+    background-color: #FFF6EB;
+    border: #759592 2px solid;
+    color: #759592;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
 }
 
 /* Footer */

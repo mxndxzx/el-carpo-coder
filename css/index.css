@@ -1,593 +1,66 @@
-/* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Menu */
+header {
+    background-color: #FFFAF4;
+    color: #030207;
+}
 
-/* Global */
-
-html {
+/* Fuente y color principal */
+body {
+    background-color: #FFFAF4;
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
-    font-size: 16px;
     color: #030207;
-    background-color: #FFFAF4;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fuentes */
-
-.title {
+/* Fuente de títulos */
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Rubik', sans-serif;
-    font-size: 3.75rem;
+    font-weight: 600;
     color: #030207;
 }
 
-.text {
-    font-size: 1.375rem;
-}
-
-.title-accent {
+/* Acento títulos */
+h1 span, h2.fst-italic {
+    font-family: 'Overpass', sans-serif;
     color: #759592;
 }
 
-.subtitle {
-    font-family: 'Rubik', sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    color: #030207;
-    font-size: 1.2rem;
-}
-
-/* Limpiar links */
-
-a {
-    text-decoration: none;
-    color: #030207;
-}
-
-/* Limpiar listas */
-
-ul {
-    list-style: none;
-}
-
-/* Estilos Generales */
-.index-hero {
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
-}
-
-.hero-link > a, .index-bio-text > p > a {
+/* Acento textos */
+p a {
+    font-family: 'Overpass', sans-serif;
     text-decoration: underline;
     color: #759592;
 }
 
-span {
-    color: #759592;
-}
-
-.header {
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
-}
-
-.index-bio-btn a {
-    padding: 12px 20px;
+/* Fondo de las cards (en index) */
+.card, .card h3 {
     background-color: #759592;
-    border-radius: 20px;
     color: #FFFAF4;
 }
 
-.menu a:hover, .menu-about a:hover {
-    color: #759592;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    -ms-transition: all 0.1s linear;
-    -o-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-}
-
-/* Redimensionar imágenes */
-img {
-    width: 100%;
-    max-width: 100%;
-}
-
-.hero-img img, .index-bio-img img {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 7px 7px 6px 0px rgba(0,0,0,0.16);
-}
-
-.box-img img, .box-img-large img {
-    border-radius: 20px 20px 0 0;
+/* Cards de discografía */
+.card-disk {
+    background-color: #FFFAF4;
+    color: #030207;
+    border: none;
 }
 
 /* Formulario */
-.form-flex {
+form {
     background-color: #FFF6EB;
-    padding: 6% 10%;
-    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.20);
-    border-radius: 20px;
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-content: center;
-    row-gap: 5%;
 }
 
-.form {
-    margin-top: 5%;
-}
-
-.form-border {
+.form-control {
     background-color: #FFF6EB;
     border: 2px solid #759592;
-    border-radius: 20px;
-    padding: 10px;
 }
 
-.msj {
-    height: 40%;
-}
-
-.form-btn {
+input.btn {
     background-color: #759592;
-    color: #FFFAF4;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 20px;
-    width: 16%;
-    margin: 0 auto;
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -ms-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    transition: all 0.15s linear;
-}
-
-.form-btn:hover {
-    background-color: #FFF6EB;
-    border: #759592 2px solid;
-    color: #759592;
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -ms-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    transition: all 0.15s linear;
+    color: #FFF6EB;
 }
 
 /* Footer */
-.footer {
+footer {
     background-color: #FFF6EB;
-    box-shadow: inset 0px 2px 6px 0px rgba(0,0,0,0.16);
-    font-size: 0.9rem;
-    padding: 1% 10%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
 }
-
-.footer nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.footer nav > ul {
-    margin: 0 30px;
-}
-
-.ft-sub-item {
-    color: #759592;
-}
-
-.footer-right {
-    align-self: flex-end;
-}
-
-.footer-right a {
-    color: #759592;
-    text-decoration: underline;
-}
-
-/* Responsive +1280px */
-@media screen and (min-width: 1280px) {
-    /* INDEX */
-    .header { /* Header */
-        font-size: 0.9rem;
-        height: 8vh;
-        padding: 3px 140px 3px 140px;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu-logo {
-        height: 52px;
-        width: auto;
-    }
-
-    .menu-logo img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-    }
-
-    .menu ul li {
-        margin: 0px 20px;
-    }
-
-    .menu-burguer {
-        display: none;
-    }
-
-    .hero, .about-hero, .play-hero { /* Hero de 3 páginas */
-        height: 92vh;
-        padding: 8% 10% 0;
-    }
-
-    .hero-grid { 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr;
-        gap: 16px;
-        height: 100%;
-    }
-
-    .hero-img {
-        width: 90%;
-    }
-
-    .hero-text {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-    }
-
-    .hero-scroll {
-        width: 50px;
-        grid-area: 2 / 1 / 3 / 3;
-        justify-self: center;
-        align-self: end;
-    }
-
-    .index-bio { /* Bio */
-        padding: 6% 7% 4%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 16px;
-    }
-
-    .index-bio-img {
-        width: 90%;
-    }
-
-    .index-bio-text {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .index-bio-text p {
-        align-self: start;
-        margin-top: 10px;
-    }
-
-    .index-bio-btn {
-        margin: 30px 0;
-    }
-
-    .index-disk { /* Mejores discos */
-        padding: 4% 7%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-
-    .index-disk-title {
-        padding: 0 0 7%;
-    }
-
-    .index-disk-flex { /* Contenedor de cards */
-        width: 100%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .index-disk-box, .index-disk-box-large {
-        border-radius: 20px;
-        background-color: #759592;
-        color: #FFFAF4;
-        font-size: 1.2rem;
-    }
-
-    .box-img {
-        width: 260px;
-    }
-
-    .box-img-large {
-        width: 400px;
-    }
-
-    .box-text, .box-text-large {
-        height: 100px;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .box-text-large {
-        height: 130px;
-        font-size: 1.4rem;
-    }
-
-    .contacto { /* Contacto */
-        padding: 4% 7%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* ABOUT */
-    .about-hero {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 5%;
-    }
-
-    .hero-scroll-about {
-        width: 50px;
-        margin-top: 20%;
-    }
-
-    /* PLAYLISTS */
-    .play-hero {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 2%;
-    }
-
-    .spotify {
-        margin-top: 4%;
-        width: 60vw;
-        height: auto;
-    }
-}
-
-/* Responsive hasta 500px (Mobile) */
-@media screen and (max-width: 500px) {
-    .text { /* Tamaños de textos */
-        font-size: 1.2rem;
-    }
-
-    .title {
-        font-size: 2.5rem;
-    }
-
-    .subtitles {
-        font-size: 1rem;
-    }
-    
-    .header {/* Menu */
-        height: 8vh;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 8%;
-    }
-
-    .menu-logo {
-        width: 40%;
-    }
-
-    .menu, .menu-about {
-        display: none;
-    }
-
-    .menu-burguer {
-        width: 8%;
-    }
-
-    .hero-grid { /* Index hero, con FLEX en vez de grid */
-        height: 91vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20% 7% 0 7%;
-    }
-
-    .hero-img {
-        width: 70vw;
-    }
-
-    .hero-text {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 30px;
-        line-height: 30px;
-    }
-
-    .hero-title {
-        align-self: center;
-    }
-
-    .hero-scroll {
-        width: 8vw;
-    }
-
-    .index-bio { /* Bio mobile */
-        padding: 10% 7% 10%;
-    }
-
-    .index-bio-text {
-        height: 40vh;
-        margin-top: 10%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .index-disk { /* Discografía mobile */
-        padding: 20% 7%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .index-disk-title {
-        text-align: center;
-        padding-bottom: 16%;
-    }
-
-    .index-disk-flex { /* Discos box, contenedor */
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: stretch;
-    }
-
-    .mobile-box { /* Cajas de discos (3) */
-        margin: 16px 0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .mobile-img {
-        width: 50%;
-    }
-
-    .mobile-img img {
-        border-radius: 5px;
-        box-shadow: inset 2px 2px 6px 0px rgba(0,0,0,0.16);
-    }
-
-    .mobile-txt {
-        width: 50%;
-        text-align: center;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .mobile-txt h3 {
-        font-family: 'Rubik', sans-serif;
-        font-size: 1.4rem;
-    }
-
-    .contacto { /* Contacto */
-        padding: 20% 7%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: stretch;
-    }
-
-    .contacto-title, .title-accent {
-        text-align: center;
-    }
-
-    .form-flex { /* Corregir ancho del formulario */
-        width: 100%;
-    }
-
-    .form-btn { /* Corregir el ancho del botón del formulario */
-        width: 80%;
-    }
-
-    .footer { /* Footer (solo tamaños y align) */
-        padding: 7% 7%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        row-gap: 100px;
-    }
-
-    .footer-left {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-    
-    .footer nav {
-        grid-area: 1 / 1 / 2 / 3;
-    }
-    
-    .footer-right {
-        grid-area: 2 / 2 / 3 / 3;
-        text-align: right;
-    }
-
-    .play-hero {
-        height: 92vh;
-        padding: 0 7%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2%;
-        text-align: center;
-    }
-
-    .spotify {
-        margin-top: 10%;
-        width: 100%;
-    }
-
-    .about-hero { /* About */
-        height: 92vh;
-        padding: 10% 7% 0;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-        gap: 10%;
-    }
-
-    .about-hero .title {
-        text-align: center;
-    }
-
-    .hero-scroll-about {
-        width: 8vw;
-    }
-}
-
-
-
-

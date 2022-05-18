@@ -6,117 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Carpo</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> <!-- Bootstrap CDN via jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> <!-- Bootstrap CDN via jsDelivr -->
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="header">
+    <header class="shadow-sm">
         <!-- Menu -->
-        <div class="menu-logo"><a href="index.html"><img src="img/icons/hero-icon.png" alt="Menu logo"></a></div>
-        <nav class="menu" id="menu-mobile">
-            <ul>
-                <li><a href="pages/biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="pages/discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="pages/bandas.html">Bandas</a></li>
-                <li><a href="pages/equipamiento.html">Equipamiento</a></li>
-                <li><a href="pages/playlists.html">Playlists</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/icons/hero-icon.png" alt="" width="auto" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-3" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/biografia.html">Biografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/bandas.html">Bandas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/equipamiento.html">Equipamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/playlists.html">Playlists</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <a class="nav-link" href="pages/about.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div class="menu-about"><a href="pages/about.html">Nosotros</a></div>
-        <div class="menu-burguer"><a href="#menu-mobile"><img src="img/icons/burguer-menu.png" alt="Burguer menu"></a></div>
     </header>
     <main>
-        <!-- Hero -->
-        <div class="hero">
-            <section class="hero-grid">
-                <div class="hero-img"><img src="img/hero-bg.jpg" alt="Hero background"></div>
-                <article class="text hero-text">
-                    <h1 class="title hero-title">La <span>Wiki</span> de Pappo</h1>
-                    <p>Un repaso por la vida del m&aacute;s grande guitarrista argentino de todos los tiempos</p>
-                    <p class="hero-link">Conoc&eacute; su <a href="#bio">historia</a></p>
-                </article>
-                <div class="hero-scroll"><a href="#bio"><img src="img/icons/scroll-bar.png" alt="Hero scroll icon"></a></div>
-            </section>
+    <!-- Hero -->
+    <section class="my-5 container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="img/hero-bg.jpg" class="d-block mx-lg-auto img-fluid rounded-1 shadow" alt="Hero background" width="auto" height="auto" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">La <span>Wiki</span> de Pappo</h1>
+                <p class="lead">Un repaso por la vida del más grande guitarrista argentino de todos los tiempos</p>
+                <p class="lead"> Conocé su <a href="#bio">historia</a></p>
+            </div>
+            <div class="text-center">
+                <a href="#bio"><img class="img-fluid" src="img/icons/scroll-bar.png" alt="Hero scroll icon" width="50"></a>
+            </div>
         </div>
-        <!-- Bio -->
-        <section id="bio" class="index-bio">
-            <div class="index-bio-img"><img src="img/bio-2.jpg" alt="Bio image"></div>
-            <article class="index-bio-text text">
-                <h2 class="title">Sobre Pappo</h2>
-                <p>Guitarrista, compositor, letrista y mucho m&aacute;s!</p>
-                <p>Pappo comenz&oacute; su carrera musical a fines de los años 60', donde comparti&oacute; inolvidables experiencias con bandas como Los Abuelos de la Nada y los Gatos, hasta llegar a formar el m&iacute;tico tr&iacute;o que llevaba su nombre, <a href="pages/pappos-blues.html">Pappo's Blues</a></p>
-                <p>Sin dudas, uno de los mejores m&uacute;sicos que ha conocido la Argentina</p>
-                <div class="index-bio-btn"><a href="pages/biografia.html">Saber más</a></div>
+    </section>
+    <!-- Bio -->
+    <section class="container col-xxl-8 px-4 py-5" id="bio">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold lh-1 mb-3 fs-0">Sobre Pappo</h2>
+                <p class="lead">Guitarrista, compositor, letrista y mucho m&aacute;s!</p>
+                <p class="lead">Pappo comenz&oacute; su carrera musical a fines de los años 60', donde comparti&oacute; inolvidables experiencias con bandas como Los Abuelos de la Nada y los Gatos, hasta llegar a formar el m&iacute;tico tr&iacute;o que llevaba su nombre, <a href="pages/pappos-blues.html">Pappo's Blues</a></p>
+                <p class="lead">Sin dudas, uno de los mejores m&uacute;sicos que ha conocido la Argentina</p>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="img/bio-2.jpg" class="d-block mx-lg-auto img-fluid rounded-1 shadow" alt="Bio background" width="auto" height="auto" loading="lazy">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <a href="pages/biografia.html"><button type="button" class="btn btn-lg px-4 me-md-2" style="background-color: #759592; color: #FFFAF4;">Saber más</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- Disk -->
+    <section class="container px-4 py-5 mb-3">
+        <h2 class="text-center mb-5">Conoc&eacute; sus mejores discos!</h2>
+        <div class="card-group gap-5">
+            <article class="card border-0 rounded-3" style="width: 18rem;">
+                <a href="pages/discografia.html#vol-2"><img src="img/vol-2.jpg" class="card-img-top rounded-3" alt="Volumen 2"></a>
+                <div class="card-body text-center">
+                    <h3 class="card-title mb-4">Volumen 2</h3>
+                    <p class="card-text">Pappo's Blues - 1972</p>
+                </div>
             </article>
-        </section>
-        <!-- Disk -->
-        <section class="index-disk">
-            <h2 class="index-disk-title title">Conoc&eacute; sus mejores discos!</h2>
-            <div class="index-disk-flex">    
-                <article class="index-disk-box mobile-box">
-                    <div class="box-img mobile-img"><a href="pages/discografia.html#vol-2"><img src="img/vol-2.jpg" alt="Volumen 2"></a></div>
-                    <div class="box-text mobile-txt">
-                        <h3>Volumen 2</h3>
-                        <p>Pappo's Blues - 1972</p>
-                    </div>
-                </article>
-                <article class="index-disk-box-large mobile-box">
-                    <div class="box-img-large mobile-img"><a href="pages/discografia.html#vol-3"><img src="img/vol-3.jpg" alt="Volumen 3"></a></div>
-                    <div class="box-text-large mobile-txt">
-                        <h3>Volumen 3</h3>
-                        <p>Pappo's Blues - 1973</p>
-                    </div>
-                </article>
-                <article class="index-disk-box mobile-box">
-                    <div class="box-img mobile-img"><a href="pages/discografia.html#aeroblus"><img src="img/aeroblus.png" alt="Aeroblus 1977"></a></div>
-                    <div class="box-text mobile-txt">
-                        <h3>Aeroblus</h3>
-                        <p>Aeroblus - 1977</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- Contacto -->
-        <section class="contacto">
-            <h2 class="title contacto-title">Ten&eacute;s dudas o sugerencias?</h2>
-            <h2 class="title title-accent">Contactanos!</h2>
-            <div class="form">
-                <form class="form-flex"> 
-                    <input class="form-border single" type="text" placeholder="Nombre">
-                    <input class="form-border single" type="email" placeholder="E-Mail">
-                    <input class="form-border msj" type="text" placeholder="Mensaje">
-                    <input class="form-btn" type="button" value="Enviar">
-                </form>
-            </div>
-        </section>
+            <article class="card border-0 rounded-3" style="width: 18rem;">
+                <a href="pages/discografia.html#vol-3"><img src="img/vol-3.jpg" class="card-img-top rounded-3" alt="Volumen 3"></a>
+                <div class="card-body text-center">
+                    <h3 class="card-title mb-4">Volumen 3</h3>
+                    <p class="card-text">Pappo's Blues - 1973</p>
+                </div>
+            </article>
+            <article class="card border-0 rounded-3" style="width: 18rem;">
+                <a href="pages/discografia.html#aeroblus"><img src="img/aeroblus.png" class="card-img-top rounded-3" alt="Aeroblus"></a>
+                <div class="card-body text-center">
+                    <h3 class="card-title mb-4">Aeroblus</h3>
+                    <p class="card-text">Aeroblus - 1977</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section class="mt-5 container justify-content-center" style="max-width: 700px;">
+        <h2 class="text-center fs-0">Ten&eacute;s dudas o sugerencias?</h2>
+        <h2 class="text-center fs-0" style="color: #759592;">Contactanos!</h2>
+        <div>
+            <form class="form p-5 rounded-5 mb-5 text-center shadow-sm">
+                <input class="form-control mt-3 rounded-5" type="text" placeholder="Nombre">
+                <input class="form-control mt-3 rounded-5" type="email" placeholder="E-Mail">
+                <input class="form-control mt-3 rounded-5" type="text" placeholder="Mensaje">
+                <input class="form-control mt-3 btn rounded-5" type="button" value="Enviar" style="width: 50%;">
+            </form>
+        </div>
+    </section>
     </main>
-    <footer class="footer">
-        <div class="footer-left"><p>Todos los derechos reservados</p></div>
-        <nav>
-            <ul class="ft-menu-left">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="pages/discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="pages/playlists.html">Playlists</a></li>
+    <footer class="container-fluid shadow-lg px-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-4">
+            <p class="col-md-4 mb-0 text-muted">&copy; Todos los derechos reservados</p>
+            <ul class="nav col-md-4 justify-content-center">
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="pages/biografia.html">Biografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="pages/discografia.html">Discografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="pages/bandas.html">Bandas</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="pages/equipamiento.html">Equipamiento</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="pages/playlists.html">Playlists</a>
+                </li>
             </ul>
-            <ul class="ft-menu-center">
-                <li><a href="pages/bandas.html">Bandas</a></li>
-                <div class="ft-shape-center"></div>
-                <ul>
-                    <li><a class="ft-sub-item" href="#">Los Gatos</a></li>
-                    <li><a class="ft-sub-item" href="#">Pappo's Blues</a></li>
-                    <li><a class="ft-sub-item" href="#">Aeroblus</a></li>
-                </ul>
-            </ul>
-            <ul class="ft-menu-right">
-                <li><a href="pages/equipamiento.html">Equipamiento</a></li>
-                <div class="ft-shape-right"></div>
-                <ul>
-                    <li><a class="ft-sub-item" href="#">Guitarras</a></li>
-                    <li><a class="ft-sub-item" href="#">Sonido</a></li>
-                </ul>
-            </ul>
-        </nav>
-        <div class="footer-right"><p>Made by <a href="https://www.github.com/mxndxzx">mxndxzx</a></p></div>
+            <p class="col-md-4 mb-0 text-muted text-end">Made by <a href="https://www.github.com/mxndxzx" target="_blank">mxndxzx</a></p>
+        </div>
     </footer>
 </body>
 </html>

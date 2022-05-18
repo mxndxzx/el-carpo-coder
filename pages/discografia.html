@@ -1,81 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Carpo</title>
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Carpo</title>
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> <!-- Bootstrap CDN via jsDelivr -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> <!-- Bootstrap CDN via jsDelivr -->
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <header>
+    <header class="shadow-sm">
         <!-- Menu -->
-        <nav class="nav-font menu">
-            <div class="menu-logo"><a href="../index.html"><img src="../img/icons/hero-icon.png" alt="Menu logo"></a></div>
-            <ul>
-                <li><a href="biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="bandas.html">Bandas</a></li>
-                <li><a href="equipamiento.html">Equipamiento</a></li>
-                <li><a href="playlists.html">Playlists</a></li>
-            </ul>
-            <div class="menu-about"><a href="about.html">Nosotros</a></div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/icons/hero-icon.png" alt="" width="auto" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-3" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="biografia.html">Biografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bandas.html">Bandas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipamiento.html">Equipamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="playlists.html">Playlists</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h1 class="disk-main-title">Los discos del Carpo</h1>
-        <h2 class="disk-main-subtitle">Todos est&aacute;n ordenados cronol&oacute;gicamente</h2>
-        <section class="disk-all">
-            <!-- Discos -->
-            <article class="right" id="mandioca-under">
-                <div><img src="../img/los-abuelos.jpg" alt="Mandioca Underground"></div>
-                <h3>Mandioca Underground</h3>
-                <h4>Sello Mandioca - 1968</h4>
-                <p>Este disco es m&aacute;s bien un compilado de distintas bandas de la &eacute;poca, donde se puede ver a &quot;Manal&quot;, &quot;Vox Dei&quot;, &quot;Miguel Abuelo&quot; como solista, entre otras.</p>
-                <p>Pappo participa junto a &quot;Los Abuelos de la Nada&quot; en el tema &quot;La Estaci&oacute;n&quot;</p>
-                <div class="line"></div>
+        <h1 class="text-center mt-5">Los discos del Carpo</h1>
+        <h2 class="text-center fst-italic">Todos est&aacute;n ordenados cronol&oacute;gicamente</h2>
+        <!-- Discos -->
+        <section>
+            <!-- Disco -->
+            <article class="card mb-5 mt-5 container-sm card-disk" id="mandioca-under">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../img/los-abuelos.jpg" class="img-fluid rounded-2" alt="Mandioca Underground">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Mandioca Underground</h2>
+                            <h5 class="card-subtitle mb-5">Sello Mandioca - 1968</h5>
+                            <p class="card-text">Este disco es m&aacute;s bien un compilado de distintas bandas de la &eacute;poca, donde se puede ver a &quot;Manal&quot;, &quot;Vox Dei&quot;, &quot;Miguel Abuelo&quot; como solista, entre otras.</p>
+                            <p class="card-text">Pappo participa junto a &quot;Los Abuelos de la Nada&quot; en el tema &quot;La Estaci&oacute;n&quot;</p>
+                        </div>
+                    </div>
+                </div>
             </article>
-            <!-- End -->
-            <article class="left" id="mandioca-peras">
-                <div><img src="../img/mandioca.jpg" alt="Pidamos Peras a Mandioca"></div>
-                <h3>Pidamos Peras a Mandioca</h3>
-                <h4>Sello Mandioca - 1968</h4>
-                <p>Otro compilado en la lista, esta vez incluyendo bandas como &quot;La Cofrad&iacute;a de la Flor Solar&quot;, &quot;Moris&quot; o &quot;Brujos&quot;, y cl&aacute;sicos como &quot;Vox Dei&quot;</p>
-                <p>Esta vez Pappo incluir&iacute;a un tema de su total autor&iacute;a, que interpret&oacute; excelentemente con tan solo 18 a&ntilde;os. El tema se llamaba &quot;Nunca lo Sabr&aacute;n&quot;</p>
-                <div class="line"></div>
+            <!-- Disco -->
+            <article class="card mb-5 mt-5 container-sm card-disk" id="mandioca-peras">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../img/mandioca.jpg" class="img-fluid rounded-2" alt="Pidamos Peras a Mandioca">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Pidamos Peras a Mandioca</h2>
+                            <h5 class="card-subtitle mb-5">Sello Mandioca - 1968</h5>
+                            <p class="card-text">Otro compilado en la lista, esta vez incluyendo bandas como &quot;La Cofrad&iacute;a de la Flor Solar&quot;, &quot;Moris&quot; o &quot;Brujos&quot;, y cl&aacute;sicos como &quot;Vox Dei&quot;</p>
+                            <p class="card-text">Esta vez Pappo incluir&iacute;a un tema de su total autor&iacute;a, que interpret&oacute; excelentemente con tan solo 18 a&ntilde;os. El tema se llamaba &quot;Nunca lo Sabr&aacute;n&quot;</p>
+                        </div>
+                    </div>
+                </div>
             </article>
-            <!-- End -->
+            <!-- Disco -->
+            <article class="card mb-5 mt-5 container-sm card-disk" id="los-gatos-1">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../img/los-gatos.jpg" class="img-fluid rounded-2" alt="Beat N1">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Beat N1</h2>
+                            <h5 class="card-subtitle mb-5">Los Gatos - 1969</h5>
+                            <p class="card-text">El primer disco de Pappo con "Los Gatos". Incluía temas como "Escúchame, Alúmbrame" y "Hogar", que resultaron verdaderos hits para la época.</p>
+                            <p class="card-text">Se podía apreciar el nuevo sonido que Pappo le había dado a Los Gatos, sobretodo en el tono de las guitarras que se hacía más presente en los solos.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Disco -->
+            <article class="card mb-5 mt-5 container-sm card-disk" id="los-gatos-2">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../img/los-gatos-2.jpg" class="img-fluid rounded-2" alt="Rock de la Mujer Perdida">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Rock de la Mujer Perdida</h2>
+                            <h5 class="card-subtitle mb-5">Los Gatos - 1970</h5>
+                            <p class="card-text">Último disco con Los Gatos, donde se apreciaba un sonido mucho más claro respecto al trabajo anterior</p>
+                            <p class="card-text">El tema que le da el nombre al álbum es considerado el mejor del mismo.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Disco -->
+            <article class="card mb-5 mt-5 container-sm card-disk" id="vol-1">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../img/vol-1.jpg" class="img-fluid rounded-2" alt="Volúmen 1">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Volúmen 1</h2>
+                            <h5 class="card-subtitle mb-5">Pappo's Blues - 1971</h5>
+                            <p class="card-text">Aparece el mítico trío Pappo's Blues, en su primera formación, con Davies en bajo y Black Amaya en batería.</p>
+                            <p class="card-text">"Algo ha Cambiado" y "Especies" comienzan a definir el sonido de la banda y a darle ese tono tan característico</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Disco -->
+            <article class="card mb-5 mt-5 container-sm card-disk" id="vol-2">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../img/vol-2.jpg" class="img-fluid rounded-2" alt="Volúmen 2">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Volúmen 2</h2>
+                            <h5 class="card-subtitle mb-5">Pappo's Blues - 1972</h5>
+                            <p class="card-text">Habiendo cambiado de integrantes, Pappo graba verdaderos himnos para este álbum, como "Llegará la Paz", "Blues de Santa Fé" o "Desconfío"</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Disco -->
         </section>
     </main>
-    <footer class="nav-font">
-        <div class="footer-left"><p>Todos los derechos reservados</p></div>
-        <nav>
-            <ul class="ft-menu-left">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="playlists.html">Playlists</a></li>
+    <footer class="container-fluid shadow-lg px-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-4">
+            <p class="col-md-4 mb-0 text-muted">&copy; Todos los derechos reservados</p>
+            <ul class="nav col-md-4 justify-content-center">
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="biografia.html">Biografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="discografia.html">Discografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="bandas.html">Bandas</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="equipamiento.html">Equipamiento</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="playlists.html">Playlists</a>
+                </li>
             </ul>
-            <ul class="ft-menu-center">
-                <li><a href="bandas.html">Bandas</a></li>
-                <div class="ft-shape-center"></div>
-                <ul>
-                    <li><a href="los-gatos.html">Los Gatos</a></li>
-                    <li><a href="pappos-blues.html">Pappo's Blues</a></li>
-                    <li><a href="aeroblus.html">Aeroblus</a></li>
-                </ul>
-            </ul>
-            <ul class="ft-menu-right">
-                <li><a href="equipamiento.html">Equipamiento</a></li>
-                <div class="ft-shape-right"></div>
-                <ul>
-                    <li><a href="guitarras.html">Guitarras</a></li>
-                    <li><a href="sonido.html">Sonido</a></li>
-                </ul>
-            </ul>
-        </nav>
-        <div class="footer-right"><p>Made by <a href="https://www.github.com/mxndxzx">mxndxzx</a></p></div>
+            <p class="col-md-4 mb-0 text-muted text-end">Made by <a href="https://www.github.com/mxndxzx" target="_blank">mxndxzx</a></p>
+        </div>
     </footer>
 </body>
 </html>

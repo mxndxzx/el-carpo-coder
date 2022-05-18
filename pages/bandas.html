@@ -6,68 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Carpo</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> <!-- Bootstrap CDN via jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> <!-- Bootstrap CDN via jsDelivr -->
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <header>
+    <header class="shadow-sm">
         <!-- Menu -->
-        <nav class="nav-font menu">
-            <div class="menu-logo"><a href="../index.html"><img src="../img/icons/hero-icon.png" alt="Menu logo"></a></div>
-            <ul>
-                <li><a href="biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="bandas.html">Bandas</a></li>
-                <li><a href="equipamiento.html">Equipamiento</a></li>
-                <li><a href="playlists.html">Playlists</a></li>
-            </ul>
-            <div class="menu-about"><a href="about.html">Nosotros</a></div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/icons/hero-icon.png" alt="" width="auto" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-3" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="biografia.html">Biografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bandas.html">Bandas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipamiento.html">Equipamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="playlists.html">Playlists</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="band-hero">
-            <h1 class="band-hero-title">Las bandas del <span>Carpo</span></h1>
-            <h2 class="band-hero-subtitle">Conoc&eacute; la historia de todas las bandas de las cuales Pappo form&oacute; parte. Nos centramos solo en su paso por dichas bandas</h2>
-            <article class="band-hero-cont">
-                <div class="band-hero-btn">
-                    <p>Los Gatos</p>
-                </div>
-                <div class="band-hero-btn">
-                    <p>Pappo's Blues</p>
-                </div>
-                <div class="band-hero-btn">
-                    <p>Aeroblus</p>
-                </div>
-            </article>
+        <section class="container-sm text-center" style="height: 90vh;">
+            <h1 class="mt-5">Las bandas del <span>Carpo</span></h1>
+            <h2 class="mt-2 fs-4 fst-italic" style="color: rgba(0, 0, 0, .5);">Conoc&eacute; la historia de todas las bandas de las cuales Pappo form&oacute; parte.</h2>
+            <h2 class="fs-4 fst-italic" style="color: rgba(0, 0, 0, .5);">Nos centramos solo en su paso por dichas bandas</h2>
+            <div class="container my-5">
+                <button type="button" class="btn btn-lg my-5 mx-5" style="border: 2px solid #759592;">Los Gatos</button>
+                <button type="button" class="btn btn-lg my-5 mx-5" style="border: 2px solid #759592;">Pappo's Blues</button>
+                <button type="button" class="btn btn-lg my-5 mx-5" style="border: 2px solid #759592;">Aeroblus</button>
+            </div>
         </section>
     </main>
-    <footer class="nav-font">
-        <div class="footer-left"><p>Todos los derechos reservados</p></div>
-        <nav>
-            <ul class="ft-menu-left">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="playlists.html">Playlists</a></li>
+    <footer class="container-fluid shadow-lg px-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-4">
+            <p class="col-md-4 mb-0 text-muted">&copy; Todos los derechos reservados</p>
+            <ul class="nav col-md-4 justify-content-center">
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="biografia.html">Biografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="discografia.html">Discografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="bandas.html">Bandas</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="equipamiento.html">Equipamiento</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="playlists.html">Playlists</a>
+                </li>
             </ul>
-            <ul class="ft-menu-center">
-                <li><a href="bandas.html">Bandas</a></li>
-                <div class="ft-shape-center"></div>
-                <ul>
-                    <li><a href="los-gatos.html">Los Gatos</a></li>
-                    <li><a href="pappos-blues.html">Pappo's Blues</a></li>
-                    <li><a href="aeroblus.html">Aeroblus</a></li>
-                </ul>
-            </ul>
-            <ul class="ft-menu-right">
-                <li><a href="equipamiento.html">Equipamiento</a></li>
-                <div class="ft-shape-right"></div>
-                <ul>
-                    <li><a href="guitarras.html">Guitarras</a></li>
-                    <li><a href="sonido.html">Sonido</a></li>
-                </ul>
-            </ul>
-        </nav>
-        <div class="footer-right"><p>Made by <a href="https://www.github.com/mxndxzx">mxndxzx</a></p></div>
+            <p class="col-md-4 mb-0 text-muted text-end">Made by <a href="https://www.github.com/mxndxzx" target="_blank">mxndxzx</a></p>
+        </div>
     </footer>
 </body>
 </html>

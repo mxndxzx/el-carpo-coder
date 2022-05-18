@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Carpo</title>
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Carpo</title>
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> <!-- Bootstrap CDN via jsDelivr -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> <!-- Bootstrap CDN via jsDelivr -->
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <header class="header">
+    <header class="shadow-sm">
         <!-- Menu -->
-        <div class="menu-logo"><a href="../index.html"><img src="../img/icons/hero-icon.png" alt="Menu logo"></a></div>
-        <nav class="menu">
-            <ul>
-                <li><a href="biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="bandas.html">Bandas</a></li>
-                <li><a href="equipamiento.html">Equipamiento</a></li>
-                <li><a href="playlists.html">Playlists</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/icons/hero-icon.png" alt="" width="auto" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-3" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="biografia.html">Biografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bandas.html">Bandas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipamiento.html">Equipamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="playlists.html">Playlists</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div class="menu-about"><a href="about.html">Nosotros</a></div>
-        <div class="menu-burguer"><a href="#"><img src="img/icons/burguer-menu.png" alt="Burguer menu"></a></div>
     </header>
     <main>
-        <section class="equip-hero">
-            <h1 class="equip-hero-title">Equipamiento & sonido</h1>
-            <div class="equip-box">
-                <h2>Guitarras</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, rerum inventore repudiandae nostrum, fugiat laborum dignissimos laboriosam eligendi, dolorem odio nobis odit enim nisi accusamus culpa perspiciatis dolore pariatur veritatis.</p>
-            </div>
-            <div class="equip-box">
-                <h2>Sonido</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita assumenda dolore provident, non nobis reiciendis rerum ratione amet sunt neque. Earum mollitia minima neque nisi autem, quas natus ducimus consequatur.</p>
+        <section style="height: 100vh;">
+            <h1 class="text-center my-5">Equipamiento & sonido</h1>
+            <div class="container-sm">
+                <article class="card border-2 rounded-3 mb-5 text-center mx-auto" style="background-color: #FFFAF4;color: #030207; width: 16rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Guitarras</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero aliquid cupiditate in ipsa similique, aspernatur veniam, quam sint aliquam deleniti! Quo voluptate, modi repellat exercitationem repellendus soluta cum at?</p>
+                    </div>
+                </article>
+                <article class="card border-2 rounded-3 mt-5 text-center mx-auto" style="background-color: #FFFAF4;color: #030207; width: 16rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Sonido</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi quas asperiores laboriosam facere iusto sunt, temporibus earum? Sunt labore quas cumque nam neque sapiente enim, vitae dolor animi totam!</p>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-left"><p>Todos los derechos reservados</p></div>
-        <nav>
-            <ul class="ft-menu-left">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="biografia.html">Biograf&iacute;a</a></li>
-                <li><a href="discografia.html">Discograf&iacute;a</a></li>
-                <li><a href="playlists.html">Playlists</a></li>
+    <footer class="container-fluid shadow-lg px-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-4">
+            <p class="col-md-4 mb-0 text-muted">&copy; Todos los derechos reservados</p>
+            <ul class="nav col-md-4 justify-content-center">
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="biografia.html">Biografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="discografia.html">Discografía</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="bandas.html">Bandas</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="equipamiento.html">Equipamiento</a>
+                </li>
+                <li class="nav-item px-2 text-center">
+                    <a class="nav-link text-black-50" href="playlists.html">Playlists</a>
+                </li>
             </ul>
-            <ul class="ft-menu-center">
-                <li><a href="bandas.html">Bandas</a></li>
-                <div class="ft-shape-center"></div>
-                <ul>
-                    <li><a class="ft-sub-item" href="#">Los Gatos</a></li>
-                    <li><a class="ft-sub-item" href="#">Pappo's Blues</a></li>
-                    <li><a class="ft-sub-item" href="#">Aeroblus</a></li>
-                </ul>
-            </ul>
-            <ul class="ft-menu-right">
-                <li><a href="equipamiento.html">Equipamiento</a></li>
-                <div class="ft-shape-right"></div>
-                <ul>
-                    <li><a class="ft-sub-item" href="#">Guitarras</a></li>
-                    <li><a class="ft-sub-item" href="#">Sonido</a></li>
-                </ul>
-            </ul>
-        </nav>
-        <div class="footer-right"><p>Made by <a href="https://www.github.com/mxndxzx">mxndxzx</a></p></div>
+            <p class="col-md-4 mb-0 text-muted text-end">Made by <a href="https://www.github.com/mxndxzx" target="_blank">mxndxzx</a></p>
+        </div>
     </footer>
 </body>
 </html>

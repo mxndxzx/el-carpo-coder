@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 /* Menu */
 header {
     background-color: #FFFAF4;
@@ -63,4 +65,11 @@ input.btn {
 /* Footer */
 footer {
     background-color: #FFF6EB;
+}
+
+/* === Animaciones === */
+.navbar-collapse a:hover, .navbar-brand:hover, .nav-item a:hover{
+    color: #759592;
+    transform: scale(1.05);
+    transition: 100ms;
 }

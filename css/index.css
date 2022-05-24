@@ -1,75 +1,77 @@
+@charset "UTF-8";
 @import 'animate.css';
-
 /* Menu */
 header {
-    background-color: #FFFAF4;
-    color: #030207;
+  background-color: #FFFAF4;
+  color: #030207;
 }
 
 /* Fuente y color principal */
 body {
-    background-color: #FFFAF4;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 400;
-    color: #030207;
+  background-color: #FFFAF4;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: #030207;
 }
 
 /* Fuente de títulos */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    color: #030207;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #030207;
 }
 
 /* Acento títulos */
 h1 span, h2.fst-italic {
-    font-family: 'Overpass', sans-serif;
-    color: #759592;
+  font-family: "Overpass", sans-serif;
+  color: #759592;
 }
 
 /* Acento textos */
 p a {
-    font-family: 'Overpass', sans-serif;
-    text-decoration: underline;
-    color: #759592;
+  font-family: "Overpass", sans-serif;
+  text-decoration: underline;
+  color: #759592;
 }
 
 /* Fondo de las cards (en index) */
 .card, .card h3 {
-    background-color: #759592;
-    color: #FFFAF4;
+  background-color: #759592;
+  color: #FFFAF4;
 }
 
 /* Cards de discografía */
 .card-disk {
-    background-color: #FFFAF4;
-    color: #030207;
-    border: none;
+  background-color: #FFFAF4;
+  color: #030207;
+  border: none;
 }
 
 /* Formulario */
 form {
-    background-color: #FFF6EB;
+  background-color: #FFF6EB;
 }
 
 .form-control {
-    background-color: #FFF6EB;
-    border: 2px solid #759592;
+  background-color: #FFF6EB;
+  border: 2px solid #759592;
 }
 
 input.btn {
-    background-color: #759592;
-    color: #FFF6EB;
+  background-color: #759592;
+  color: #FFF6EB;
 }
 
 /* Footer */
 footer {
-    background-color: #FFF6EB;
+  background-color: #FFF6EB;
 }
 
 /* === Animaciones === */
-.navbar-collapse a:hover, .navbar-brand:hover, .nav-item a:hover{
-    color: #759592;
-    transform: scale(1.05);
-    transition: 100ms;
+.navbar-collapse a:hover, .navbar-brand:hover, .nav-item a:hover {
+  color: #759592;
+  transform: scale(1.05);
+  transition: 100ms;
 }
+
+/*# sourceMappingURL=index.css.map */

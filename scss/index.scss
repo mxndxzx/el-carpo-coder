@@ -1,75 +1,77 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import 'animate.css';
 
 /* Menu */
 header {
-    background-color: #FFFAF4;
-    color: #030207;
+    background-color: $bg-color;
+    color: $text-color;
 }
 
 /* Fuente y color principal */
 body {
-    background-color: #FFFAF4;
+    background-color: $bg-color;
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
-    color: #030207;
+    color: $text-color;
 }
 
 /* Fuente de títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-    color: #030207;
+    color: $text-color;
 }
 
 /* Acento títulos */
 h1 span, h2.fst-italic {
-    font-family: 'Overpass', sans-serif;
-    color: #759592;
+    font-family: 'Rubik', sans-serif;
+    color: $acc-color;
 }
 
 /* Acento textos */
 p a {
     font-family: 'Overpass', sans-serif;
     text-decoration: underline;
-    color: #759592;
+    color: $acc-color;
 }
 
 /* Fondo de las cards (en index) */
 .card, .card h3 {
-    background-color: #759592;
-    color: #FFFAF4;
+    background-color: $acc-color;
+    color: $bg-color;
 }
 
 /* Cards de discografía */
 .card-disk {
-    background-color: #FFFAF4;
-    color: #030207;
+    background-color: $bg-color;
+    color: $text-color;
     border: none;
 }
 
 /* Formulario */
 form {
-    background-color: #FFF6EB;
+    background-color: $bg2-color;
 }
 
 .form-control {
-    background-color: #FFF6EB;
-    border: 2px solid #759592;
+    background-color: $bg2-color;
+    border: 2px solid $acc-color;
 }
 
 input.btn {
-    background-color: #759592;
-    color: #FFF6EB;
+    background-color: $acc-color;
+    color: $bg2-color;
 }
 
 /* Footer */
 footer {
-    background-color: #FFF6EB;
+    background-color: $bg2-color;
 }
 
 /* === Animaciones === */
 .navbar-collapse a:hover, .navbar-brand:hover, .nav-item a:hover{
-    color: #759592;
+    color: $acc-color;
     transform: scale(1.05);
     transition: 100ms;
 }

@@ -16,7 +16,37 @@ body {
 }
 
 /* Fuente de títulos */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #030207;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #030207;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #030207;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #030207;
+}
+
+h5 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #030207;
+}
+
+h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   color: #030207;
@@ -24,14 +54,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Acento títulos */
 h1 span, h2.fst-italic {
-  font-family: "Rubik", sans-serif;
   color: #759592;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Acento textos */
 p a {
-  font-family: "Overpass", sans-serif;
+  color: #759592;
   text-decoration: underline;
+  font-family: "Overpass", sans-serif;
+}
+p a:hover {
+  text-decoration: none;
   color: #759592;
 }
 
@@ -49,12 +83,11 @@ p a {
 }
 
 /* Formulario */
-form {
+.form, .form-control {
   background-color: #FFF6EB;
 }
 
 .form-control {
-  background-color: #FFF6EB;
   border: 2px solid #759592;
 }
 

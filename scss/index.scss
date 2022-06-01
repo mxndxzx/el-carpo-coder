@@ -1,77 +1,93 @@
-@import '_variables';
+@import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import 'animate.css';
 
+
+@mixin title-accent($color, $font) {
+    color: $color;
+    font-family: $font;
+}
+
+@mixin text-accent($color, $font) {
+    color: $color;
+    text-decoration: underline;
+    font-family: $font;
+}
 /* Menu */
 header {
-    background-color: $bg-color;
-    color: $text-color;
+    background-color: map-get($map: $palette, $key: "bg-primary");
+    color: map-get($map: $palette, $key: "text-primary");
 }
 
 /* Fuente y color principal */
 body {
-    background-color: $bg-color;
+    background-color: map-get($map: $palette, $key: "bg-primary");
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
-    color: $text-color;
+    color: map-get($map: $palette, $key: "text-primary");
 }
 
 /* Fuente de títulos */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    color: $text-color;
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        color: map-get($map: $palette, $key: "text-primary");
+    }
 }
 
 /* Acento títulos */
 h1 span, h2.fst-italic {
-    font-family: 'Rubik', sans-serif;
-    color: $acc-color;
+    @include title-accent(map-get($map: $palette, $key: "accent"), $title-font);
 }
 
 /* Acento textos */
-p a {
-    font-family: 'Overpass', sans-serif;
-    text-decoration: underline;
-    color: $acc-color;
+p {
+    a {
+    @include text-accent(map-get($map: $palette, $key: "accent"), $main-font);
+        &:hover {
+            text-decoration: none;
+            color: map-get($map: $palette, $key: "accent");
+        }
+    }
 }
 
 /* Fondo de las cards (en index) */
 .card, .card h3 {
-    background-color: $acc-color;
-    color: $bg-color;
+    background-color: map-get($map: $palette, $key: "accent");
+    color: map-get($map: $palette, $key: "bg-primary");
 }
 
 /* Cards de discografía */
 .card-disk {
-    background-color: $bg-color;
-    color: $text-color;
+    background-color: map-get($map: $palette, $key: "bg-primary");
+    color: map-get($map: $palette, $key: "text-primary");
     border: none;
 }
 
 /* Formulario */
-form {
-    background-color: $bg2-color;
+.form {
+    background-color: map-get($map: $palette, $key: "bg-secondary");
 }
 
 .form-control {
-    background-color: $bg2-color;
-    border: 2px solid $acc-color;
+    @extend .form;
+    border: 2px solid map-get($map: $palette, $key: "accent");
 }
 
 input.btn {
-    background-color: $acc-color;
-    color: $bg2-color;
+    background-color: map-get($map: $palette, $key: "accent");
+    color: map-get($map: $palette, $key: "bg-secondary");
 }
 
 /* Footer */
 footer {
-    background-color: $bg2-color;
+    background-color: map-get($map: $palette, $key: "bg-secondary");
 }
 
 /* === Animaciones === */
 .navbar-collapse a:hover, .navbar-brand:hover, .nav-item a:hover{
-    color: $acc-color;
+    color: map-get($map: $palette, $key: "accent");
     transform: scale(1.05);
     transition: 100ms;
 }

@@ -1,5 +1,10 @@
-// Variables
-$bg-color: #FFFAF4;
-$bg2-color: #FFF6EB;
-$text-color: #030207;
-$acc-color: #759592;
+// Colores
+$palette: (
+    "bg-primary": #FFFAF4,
+    "bg-secondary": #FFF6EB,
+    "text-primary": #030207,
+    "accent": #759592,
+);
+//Fuentes
+$main-font:'Overpass', sans-serif;
+$title-font:'Rubik', sans-serif;

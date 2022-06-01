@@ -1,6 +1,5 @@
 # Node / Npm
 node_modules/
-*.json
 
 # Mapas CSS
 *.css.map
